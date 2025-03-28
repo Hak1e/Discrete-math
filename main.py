@@ -160,7 +160,7 @@ def dop_code(v1, sign, v2):
 
 def fill_list(value, values_list, max_length, max_nums_len):
     result = []
-    i = abs(len(str(value)) - max_length)
+    i = abs(len(str(abs(value))) - max_nums_len)
     if value < 0:
         result.append("1")
         if len(values_list) < max_nums_len:
